@@ -38,6 +38,7 @@ body {
   color: var(--color-stone-600);
   line-height: 1.5;
 }
+
 /* common */
 
 main {
@@ -59,6 +60,15 @@ main {
   color: var(--color-brown-800);
 }
 
+.list-item {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
 .recipe-card {
   background-color: var(--color-white);
 }
@@ -69,46 +79,61 @@ main {
   color: var(--color-stone-900);
 }
 
+.preparation__text span,
+.instructions__text span {
+  font-weight: 700;
+}
 /* preparation */
 
 .preparation {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: var(--color-rose-50);
 }
 
 .preparation__title {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   color: var(--color-rose-800);
   line-height: 1;
   font-weight: 600;
-}
-
-.preparation__item {
-  position: relative;
-  padding-left: 2.5rem;
 }
 
 .preparation__item::before {
   background-color: var(--color-rose-800);
 }
 
-.preparation__time {
-  font-weight: 700;
-}
-
 /* ingredients */
 
-.ingredients__item {
-  position: relative;
-  padding-left: 40px;
-}
-
-.ingredients__item:not(:last-child) {
-  margin-bottom: 0.5rem;
+.ingredients::after {
+  display: block;
+  margin-top: 32px;
+  content: "";
+  width: 100%;
+  height: 0.0625rem;
+  background-color: var(--color-stone-150);
 }
 
 .ingredients__item::before {
   background-color: var(--color-brown-800);
+}
+
+/* instruction */
+
+.instructions__list {
+  counter-reset: my-counter;
+}
+
+.instructions__item {
+  counter-increment: my-counter;
+  position: relative;
+}
+
+.instructions__item::before {
+  content: counter(my-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-brown-800);
+  font-weight: 700;
 }
 
 /* mobile */
@@ -129,6 +154,8 @@ main {
     font-size: 2.25rem;
   }
 }
+
+/* utilities */
 
 .attribution {
   font-size: 0.6875rem;
@@ -161,4 +188,13 @@ main {
   width: 0.25rem;
   height: 0.25rem;
   border-radius: 50%;
+}
+
+.section-underline::after {
+  display: block;
+  margin-top: 32px;
+  content: "";
+  width: 100%;
+  height: 0.0625rem;
+  background-color: var(--color-stone-150);
 }
