@@ -178,11 +178,11 @@ td {
 /* utilities */
 
 .attribution {
-  font-size: 0.6875rem;
+  font-size: 0.875rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-rose-800);
 }
 
 .visually-hidden {
