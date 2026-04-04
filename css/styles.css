@@ -1,0 +1,77 @@
+:root {
+  --color-rose-800: #7a284e;
+  --color-rose-50: #fff7fb;
+
+  --color-stone-900: #312e2c;
+  --color-stone-600: #5f564d;
+  --color-stone-150: #e3ddd7;
+  --color-stone-100: #f3e5d7;
+
+  --color-brown-800: #854632;
+
+  --color-white: #ffffff;
+
+  --font-family-accent: "Young Serif";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-block: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
