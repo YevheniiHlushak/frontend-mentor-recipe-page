@@ -12,30 +12,7 @@
   --color-white: #ffffff;
 
   --font-family-accent: "Young Serif";
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin-block: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  --font-family-main: "Outfit";
 }
 
 @font-face {
@@ -53,6 +30,46 @@ img {
     format("truetype");
   font-style: normal;
   font-display: swap;
+}
+
+body {
+  background-color: var(--color-stone-100);
+  font-family: var(--font-family-main), serif;
+}
+/* common */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-card {
+  background-color: var(--color-white);
+}
+
+/* mobile */
+
+@media screen and (max-width: 47.9988rem) {
+  .recipe-card__image {
+    width: 100%;
+  }
+
+  .recipe-card__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2.5rem 1.875rem;
+  }
+
+  .recipe-card__title {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family-accent), sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1;
+  }
 }
 
 .attribution {
