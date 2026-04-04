@@ -103,15 +103,6 @@ main {
 
 /* ingredients */
 
-.ingredients::after {
-  display: block;
-  margin-top: 32px;
-  content: "";
-  width: 100%;
-  height: 0.0625rem;
-  background-color: var(--color-stone-150);
-}
-
 .ingredients__item::before {
   background-color: var(--color-brown-800);
 }
@@ -133,6 +124,35 @@ main {
   left: 0;
   top: 0;
   color: var(--color-brown-800);
+  font-weight: 700;
+}
+
+/* nutrition */
+
+.nutrition__text {
+  margin-bottom: 1.5rem;
+}
+
+.nutrition__table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table__item:not(:last-child) {
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+th,
+td {
+  padding-block: 12px;
+}
+
+.row-name {
+  padding-left: 32px;
+}
+
+.row-value {
+  padding-right: 32px;
   font-weight: 700;
 }
 
@@ -192,7 +212,7 @@ main {
 
 .section-underline::after {
   display: block;
-  margin-top: 32px;
+  margin-top: 2rem;
   content: "";
   width: 100%;
   height: 0.0625rem;
