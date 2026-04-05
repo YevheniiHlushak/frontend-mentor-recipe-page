@@ -34,7 +34,7 @@
 
 body {
   background-color: var(--color-stone-100);
-  font-family: var(--font-family-main), serif;
+  font-family: var(--font-family-main), sans-serif;
   color: var(--color-stone-600);
   line-height: 1.5;
 }
