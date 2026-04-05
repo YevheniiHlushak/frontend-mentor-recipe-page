@@ -155,6 +155,7 @@ td {
 .row-name {
   padding-left: 2rem;
   text-align: left;
+  font-weight: 400;
 }
 
 .row-value {
