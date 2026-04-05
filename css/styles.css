@@ -144,20 +144,21 @@ main {
 }
 
 .table__item:not(:last-child) {
-  border-bottom: 1px solid var(--color-stone-150);
+  border-bottom: 0.0625rem solid var(--color-stone-150);
 }
 
 th,
 td {
-  padding-block: 12px;
+  padding-block: 0.75rem;
 }
 
 .row-name {
-  padding-left: 32px;
+  padding-left: 2rem;
+  text-align: left;
 }
 
 .row-value {
-  padding-right: 32px;
+  padding-right: 2rem;
   font-weight: 700;
 }
 
@@ -196,7 +197,7 @@ td {
     max-width: 38.5rem;
   }
 
-  .img-wraper {
+  .img-wrapper {
     margin-bottom: 2.5rem;
     overflow: hidden;
     border-radius: 0.75rem;
@@ -212,8 +213,6 @@ td {
 
 @media screen and (min-width: 90rem) {
   .recipe-card {
-    padding: 2.5rem;
-    border-radius: 1.5rem;
     max-width: 46rem;
   }
 }
